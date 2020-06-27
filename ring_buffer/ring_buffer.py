@@ -14,8 +14,8 @@ class RingBuffer:
             self.curr = 0
 
     def get(self):
-        returned_arr = []
+        arr = []
         for el in self.buffer:
             if el is not None:
-                returned_arr.append(el)
-        return returned_arr
+                arr.append(el)
+        return arr
